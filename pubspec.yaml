@@ -1,0 +1,16 @@
+name: page_slider
+description: A flutter widget that slides through pages horizontally
+version: 0.0.1
+author: Julian Vossen <bitdirex@gmail.com>
+homepage: https://github.com/julvo/flutter_page_slider
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
