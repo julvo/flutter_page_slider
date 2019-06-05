@@ -2,11 +2,16 @@
 
 [![Pub](https://img.shields.io/pub/v/page_slider.svg)](https://pub.dev/packages/page_slider)
 
-A flutter widget that slides through pages horizontally
+A simple Flutter widget that slides through pages horizontally. Use-cases could be wizards or onboarding flows similar to the Material Stepper widget, but without a particular UI - any widget can be a page to slide through.
 
-## Getting Started
+Here's a demo of the example app:
 
-First, create the `PageSlider` widget with a `GlobalKey<PageSliderState>` and the child widgets which you want to slide through. Then, control the active page using a global key to address the page slider state like so:
+![PageSlider demo app](https://github.com/julvo/flutter_page_slider/blob/master/example/page_slider_demo.gif)
+
+
+## How to use
+
+First, create the `PageSlider` widget with a `GlobalKey<PageSliderState>` and the child widgets which you want to slide through. Then, control the active page using the global key to address the page slider state like so:
 
 ```dart
 class Demo extends StatefulWidget {

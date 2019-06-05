@@ -7,12 +7,14 @@ class PageSlider extends StatefulWidget {
     @required this.pages,
     this.duration,
     this.initialPage,
+    this.onFinished,
     @required Key key
   }) : super(key: key);
 
   final List<Widget> pages;
   final Duration duration;
   final int initialPage;
+  final VoidCallback onFinished;
 
   PageSliderState createState() => PageSliderState();
 }
@@ -64,7 +66,10 @@ class PageSliderState extends State<PageSlider> with TickerProviderStateMixin {
   }
 
   void next() {
-    if (!hasNext) return;
+    if (!hasNext) {
+      widget.onFinished();
+      return;
+    }
 
     _controllers[_currentPage].animateTo(0);
     _controllers[_currentPage + 1].animateTo(0.5);

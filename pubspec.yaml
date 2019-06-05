@@ -1,6 +1,6 @@
 name: page_slider
-description: A flutter widget that slides through pages horizontally
-version: 0.0.1
+description: A simple Flutter widget that slides through pages horizontally. For wizards or onboarding flows similar to the Material Stepper widget, but without a particular UI - any widget can be a page to slide through.
+version: 0.0.2
 author: Julian Vossen <bitdirex@gmail.com>
 homepage: https://github.com/julvo/flutter_page_slider
 
